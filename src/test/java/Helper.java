@@ -28,6 +28,7 @@ public class Helper extends BaseTest{
         }
 
     }
+    // Elemente tiklar
     public void click(By by){
         driver.findElement(by).click();
     }
