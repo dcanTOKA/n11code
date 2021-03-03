@@ -7,6 +7,8 @@ import java.util.concurrent.TimeUnit;
 public class Helper extends BaseTest{
 
     // Yardımcı Fonksiyonlar
+
+    // Elementi Bulur
     public WebElement findElement(By by){
         return driver.findElement(by);
     }
@@ -16,6 +18,7 @@ public class Helper extends BaseTest{
     public void clickByLintext(String linkText){
         driver.findElement(By.linkText(linkText)).click();
     }
+    // Elemente yazi yazar
     public void sendKeys(By by , String text , boolean submit){
 
         WebElement element = findElement(by);
