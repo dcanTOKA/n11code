@@ -7,6 +7,8 @@ import java.util.concurrent.TimeUnit;
 public class Helper extends BaseTest{
 
     // Yardımcı Fonksiyonlar
+
+    // Elementi Bulur
     public WebElement findElement(By by){
         return driver.findElement(by);
     }
