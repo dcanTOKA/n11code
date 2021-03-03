@@ -18,6 +18,7 @@ public class Helper extends BaseTest{
     public void clickByLintext(String linkText){
         driver.findElement(By.linkText(linkText)).click();
     }
+    // Elemente yazi yazar
     public void sendKeys(By by , String text , boolean submit){
 
         WebElement element = findElement(by);
