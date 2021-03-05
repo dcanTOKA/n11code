@@ -42,6 +42,7 @@ public class Helper extends BaseTest{
             System.out.println("Time Unit hatası "+e.getMessage());
         }
     }
+    // Value icin secim yapilir
     public void selectByValue(By by, String value){
         select = new Select(findElement(by));
         select.selectByValue(value);
