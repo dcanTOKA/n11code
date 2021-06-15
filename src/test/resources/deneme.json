@@ -1,0 +1,7 @@
+[
+  {
+    "key": "Deneme",
+    "value": "div:nth-of-type(2) > .link",
+    "type": "css"
+  }
+]
