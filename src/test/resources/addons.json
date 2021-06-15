@@ -1,0 +1,7 @@
+[
+  {
+    "key": "BitBucketCloud",
+    "value": "//div//h4[contains(text(),' Bitbucket Cloud ')]",
+    "type": "xpath"
+  }
+]
