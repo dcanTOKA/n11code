@@ -47,6 +47,7 @@ public class Helper extends BaseTest{
         select = new Select(findElement(by));
         select.selectByValue(value);
     }
+    // N11 Ana sayfası çağırılır.
     public void callHomePage() {
         driver.get("https://www.n11.com/");
     }
