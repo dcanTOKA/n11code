@@ -35,6 +35,7 @@ public class Helper extends BaseTest{
     public String getText(By by){
         return findElement(by).getText();
     }
+    //Gecikme koy
     public void delay(long time){
         try {
             TimeUnit.SECONDS.sleep(time);
