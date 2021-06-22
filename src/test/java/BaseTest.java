@@ -18,6 +18,7 @@ public class BaseTest {
         // WebDriverManager koy
         System.setProperty("webdriver.chrome.driver","src//test//resources//chromedriver.exe");
         this.driver = new ChromeDriver();
+        //implicit wait
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         ChromeOptions option = new ChromeOptions();
         //option.addArguments("start maximized");
