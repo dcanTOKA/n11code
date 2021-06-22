@@ -51,6 +51,7 @@ public class Helper extends BaseTest{
     public void callHomePage() {
         driver.get("https://www.n11.com/");
     }
+    //Elementi temizler
     public void clear(By by){
         driver.findElement(by).clear();
     }
