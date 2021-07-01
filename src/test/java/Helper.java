@@ -32,6 +32,7 @@ public class Helper extends BaseTest{
     public void click(By by){
         driver.findElement(by).click();
     }
+    // Text getir
     public String getText(By by){
         return findElement(by).getText();
     }
