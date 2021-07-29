@@ -22,6 +22,8 @@ public class N11Page extends  Helper{
         click(By.id("phoneNumber"));
         sendKeys(By.id("phoneNumber"),String.valueOf(545038552),false);
 
+        
+        // Dogum tarihini gir
         selectByValue(By.xpath("//select [@id ='birthDay']"),String.valueOf(1));
         selectByValue(By.xpath("//select [@id ='birthMonth']"),String.valueOf(4));
         selectByValue(By.xpath("//select [@id ='birthYear']"),String.valueOf(1997));
