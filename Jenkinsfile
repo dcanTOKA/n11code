@@ -28,5 +28,13 @@ pipeline {
                 }
             }
         }
+        
+        stage ('Test Stage') {
+            steps {
+                withMaven(maven : 'mavenLTS') {
+                    sh 'mvn test'
+                }
+            }
+        }
     }
 }
