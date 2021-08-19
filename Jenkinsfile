@@ -5,7 +5,7 @@ pipeline {
         stage ('Clean Stage') {
 
             steps {
-                withMaven(maven : 'mavenLTS') {
+                withMaven(maven : 'AutoMaven') {
                     sh 'echo After 30 sec , Maven Clean '
                     sh 'sleep 30'
                     sh 'mvn clean'
@@ -16,7 +16,7 @@ pipeline {
         stage ('Install Stage') {
 
             steps {
-                withMaven(maven : 'mavenLTS') {
+                withMaven(maven : 'AutoMaven') {
                     sh 'echo After 30 sec , Maven Install '
                     sh 'sleep 30'
                     sh 'mvn install'
@@ -27,7 +27,7 @@ pipeline {
 
         stage ('Compile Stage') {
             steps {
-                withMaven(maven : 'mavenLTS') {
+                withMaven(maven : 'AutoMaven') {
                     sh 'echo After 30 sec , Maven Compile '
                     sh 'sleep 30'
                     sh 'mvn compile'
@@ -37,7 +37,7 @@ pipeline {
         
         stage ('Test Stage') {
             steps {
-                withMaven(maven : 'mavenLTS') {
+                withMaven(maven : 'AutoMaven') {
                     sh 'echo After 30 sec , Maven Test '
                     sh 'sleep 30'
                     sh 'mvn test'
