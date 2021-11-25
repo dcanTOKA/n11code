@@ -28,6 +28,7 @@ public class BaseTest {
     }
     @After
     public void tearDown(){
+        // quit driver
         driver.quit();
     }
 
